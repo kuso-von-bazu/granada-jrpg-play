@@ -4,6 +4,16 @@
 
 ▶ **ブラウザでプレイ**: https://kuso-von-bazu.github.io/granada-jrpg-play/
 
+## 主人公イラスト案 (Issue #91)
+
+約20歳・赤毛・冒険者風・希望と野望に満ちた表情を軸にした新規案です。現行絵の自動差し替えではなく、比較・検討用です。
+
+| 男性主人公案 | 女性主人公案 |
+|---|---|
+| ![男性主人公案](samples/issue91_hero_male.png) | ![女性主人公案](samples/issue91_hero_female.png) |
+
+- [世界観設定 (Issue #92)](WORLD_BUILDING.md)
+
 - 画面が変・止まった時は **Ctrl+Shift+R**(スーパーリロード)を試してください
 - セーブはブラウザ内に保存されます(同じブラウザなら「つづきから」で再開できます)
 
