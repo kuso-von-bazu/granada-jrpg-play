@@ -12,6 +12,21 @@
 |---|---|
 | ![男性主人公案](samples/issue91_hero_male.png) | ![女性主人公案](samples/issue91_hero_female.png) |
 
+## 主人公・正面バストアップ案 (Issue #96)
+
+Issue #91の赤毛・若い冒険者という共通軸を保ち、正面から見た胸上構図へ展開した案です。
+
+| 男性主人公・正面 | 女性主人公・正面 |
+|---|---|
+| ![男性主人公・正面バストアップ](samples/issue96_hero_bust_male.png) | ![女性主人公・正面バストアップ](samples/issue96_hero_bust_female.png) |
+
+## モブキャラクターカード20案 (Issue #94)
+
+若者市民4人、子供男女、老人男女、兵士3人、酒場主人、エルフ若者男女、商人男女、魔族商人、傭兵男女、聖職者を同じ画風で揃えました。
+
+- [オンラインギャラリーで20案を見る](https://kuso-von-bazu.github.io/granada-jrpg-play/samples/issue94_mob_cards/)
+- [GitHub上の画像一覧](samples/issue94_mob_cards/README.md)
+
 - [世界観設定 (Issue #92)](WORLD_BUILDING.md)
 
 - 画面が変・止まった時は **Ctrl+Shift+R**(スーパーリロード)を試してください
