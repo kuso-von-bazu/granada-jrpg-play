@@ -1,0 +1,34 @@
+name: 絵の修正 (今ある絵に手を入れる)
+description: 消す・繋ぐ・位置を直す・透過する・色味を変えるなど。画像生成の費用はかかりません
+title: "[絵修正] "
+labels: ["request", "art:edit"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        今ある絵を加工するだけの依頼はこちら。手元で加工するので**画像生成の費用はかかりません**。
+        絵をまるごと描き起こす場合は「新しい絵の依頼」を選んでください。
+
+  - type: textarea
+    id: what
+    attributes:
+      label: どの絵を、どう直したい?
+      placeholder: "例: ワールドマップの森の中の道を消してほしい / 主人公絵の背景を透過してほしい"
+    validations:
+      required: true
+
+  - type: textarea
+    id: where
+    attributes:
+      label: 場所 (地図なら地名、画面ならどの画面か)
+      placeholder: "例: 風切り峠のあたり / 戦闘画面のキャラカード"
+    validations:
+      required: false
+
+  - type: textarea
+    id: shot
+    attributes:
+      label: スクリーンショット (あれば)
+      description: 直したい場所を丸で囲んだ画像があると早いです。
+    validations:
+      required: false

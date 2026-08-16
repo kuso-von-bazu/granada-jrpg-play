@@ -1,0 +1,35 @@
+name: 改善要望・バグ報告 (絵の作業なし)
+description: システム・バランス・UI・シナリオなど、絵に手を入れない依頼
+title: "[要望] "
+labels: ["request", "art:none"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        絵に手を入れる依頼は、こちらではなく「絵の修正」か「新しい絵の依頼」を選んでください。
+        どちらか分からない場合はこのテンプレートで構いません。こちらで振り分け直します。
+
+  - type: textarea
+    id: what
+    attributes:
+      label: どうしたい? / 何が起きた?
+      placeholder: "例: 戦闘のテンポが遅い、○○のカードが強すぎる、マップで進めなくなった など"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順 (バグの場合)
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: false
+
+  - type: textarea
+    id: shot
+    attributes:
+      label: スクリーンショット (あれば)
+    validations:
+      required: false

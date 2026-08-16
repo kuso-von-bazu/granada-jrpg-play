@@ -1,0 +1,45 @@
+name: 新しい絵の依頼 (描き起こし)
+description: モンスターやキャラなどを新しく描く依頼。画像生成の費用がかかります
+title: "[新規絵] "
+labels: ["request", "art:new"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **このテンプレートだけ画像生成の費用がかかります。**
+        今ある絵を直すだけなら「絵の修正」を選んでください。
+
+  - type: textarea
+    id: what
+    attributes:
+      label: 何を描いてほしい?
+      placeholder: "例: 新しいモンスター3種 (毒沼のスライム・岩トカゲ・雷鳥)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: art_count
+    attributes:
+      label: 枚数の目安
+      options:
+        - 1枚
+        - 2〜5枚
+        - 6枚以上
+        - わからない
+    validations:
+      required: true
+
+  - type: textarea
+    id: style
+    attributes:
+      label: 画風・雰囲気の希望
+      placeholder: "例: 今のモンスター絵と揃えて / もう少しデフォルメして"
+    validations:
+      required: false
+
+  - type: textarea
+    id: ref
+    attributes:
+      label: 参考画像 (あれば)
+    validations:
+      required: false
