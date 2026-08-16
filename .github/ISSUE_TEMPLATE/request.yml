@@ -1,0 +1,65 @@
+name: 改善要望・バグ報告
+description: ゲームへの要望やバグ報告はこちらから
+title: "[要望] "
+labels: ["request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        絵の描き起こしだけは外部の画像生成を使うので、費用の見積もりのために
+        「絵の作業」の欄だけ選んでください。分からなければ「わからない / おまかせ」で構いません。
+
+  - type: textarea
+    id: what
+    attributes:
+      label: どうしたい? / 何が起きた?
+      placeholder: "例: 戦闘のテンポが遅い、○○のカードが強すぎる、マップで進めなくなった など"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: art
+    attributes:
+      label: 絵の作業
+      description: |
+        「既存の絵の修正」は手元で加工するので画像生成の費用はかかりません。
+        費用がかかるのは「新しい絵が必要」だけです。
+      options:
+        - 絵の作業なし (システム・バランス・UI・シナリオなど)
+        - 既存の絵の修正 (消す・繋ぐ・位置を直す・透過・色味など)
+        - 新しい絵が必要 (描き起こし)
+        - わからない / おまかせ
+    validations:
+      required: true
+
+  - type: dropdown
+    id: art_count
+    attributes:
+      label: 新しい絵の枚数の目安
+      description: 「新しい絵が必要」を選んだ場合だけ答えてください。
+      options:
+        - 該当なし
+        - 1枚
+        - 2〜5枚
+        - 6枚以上
+        - わからない
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順 (バグの場合)
+      placeholder: |
+        1.
+        2.
+    validations:
+      required: false
+
+  - type: textarea
+    id: shot
+    attributes:
+      label: スクリーンショット (あれば)
+      description: 画像はここに貼り付けられます。
+    validations:
+      required: false
