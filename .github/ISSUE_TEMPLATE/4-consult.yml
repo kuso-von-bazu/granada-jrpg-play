@@ -1,0 +1,47 @@
+name: コンサル希望
+description: 方針・バランス・企画などの相談。実装依頼ではなく、考えを聞きたいとき
+title: "[コンサル] "
+labels: ["consult"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **この枠は普段の自動処理では扱いません。**
+        他の依頼と混ぜず、腰を据えて考えるための枠です。返答まで時間が空くことがあります。
+        急ぎの不具合や、やることが決まっている改修は「改善要望・バグ報告」を使ってください。
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: 相談したいこと
+      placeholder: "例: 中盤の難易度が緩い気がするが、どこを触るのが筋か / スキルカードの種類を増やすべきか"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 背景・いま困っていること
+      description: 何がきっかけでそう感じたか、実際に遊んでどうだったか、など。
+    validations:
+      required: false
+
+  - type: dropdown
+    id: want
+    attributes:
+      label: 欲しいもの
+      options:
+        - 意見・方針だけ
+        - 案をいくつか出して比較してほしい
+        - 数字で分析してほしい (勝率・バランスなど)
+        - おまかせ
+    validations:
+      required: false
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 外せない条件・避けたいこと
+      placeholder: "例: 企画書の○○は変えたくない / 作業量が大きくなるなら別案がいい"
+    validations:
+      required: false
