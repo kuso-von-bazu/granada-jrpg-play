@@ -1,0 +1,58 @@
+name: fableに製作を依頼 (ストーリーボードなど)
+description: シナリオ・ストーリーボード・設定資料など、書き物の製作依頼
+title: "[fable] "
+labels: ["fable"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **この枠は普段の自動処理では扱いません。**
+        書き物はモデルを fable に切り替えてから、まとめて手を付けます。
+        返答まで時間が空くことがあるので、急ぎの不具合や実装の依頼は
+        「改善要望・バグ報告」を使ってください。
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 作ってほしいもの
+      options:
+        - ストーリーボード (話の流れ・絵コンテ)
+        - シナリオ・イベントの台本
+        - キャラクターの設定・背景
+        - 世界観・地名・歴史などの設定資料
+        - セリフ・テキストの書き直し
+        - その他 (下に書いてください)
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: どんな内容にしたい?
+      placeholder: "例: 第2章の導入、グラナダを出て風切り峠へ向かうまでの流れ"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 前提・すでに決まっていること
+      description: 企画書や既存のシナリオで動かせない部分があれば書いてください。
+    validations:
+      required: false
+
+  - type: input
+    id: volume
+    attributes:
+      label: 分量の目安
+      placeholder: "例: 場面5つくらい / A4で1枚 / おまかせ"
+    validations:
+      required: false
+
+  - type: textarea
+    id: mood
+    attributes:
+      label: 雰囲気・参考
+      placeholder: "例: 重くしすぎず、DQくらいの明るさで"
+    validations:
+      required: false
